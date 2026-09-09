@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prompt Artificial Intelligence Lab 1 by Paphonthap Chanuwatnuntasiri — a comparison of zero-shot and refined prompts across six AI and developer tools.">
+  <meta name="theme-color" content="#f7f1e8">
+  <title>Prompt Artificial Intelligence Lab 1 — Paphonthap Chanuwatnuntasiri</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <header class="site-header" id="home">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Prompt Artificial Intelligence Lab 1 — Home">
+        <span class="brand-mark" aria-hidden="true">P.</span>
+        <span class="brand-copy">Prompt AI Lab <small>Lab 1 · 2026</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">เปิดเมนู</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="is-active">Home</a>
+        <a href="#ai-image">AI Image</a>
+        <a href="#desmos">Desmos</a>
+        <a href="#mermaid">Mermaid</a>
+        <a href="#latex">LaTeX</a>
+        <a href="#notebooklm">NotebookLM</a>
+        <a href="#website">Website</a>
+        <a href="#learning">Key Learning</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <div class="eyebrow-row" aria-label="Project categories">
+          <span>Lab 1</span><span>Prompt Engineering</span><span>Computer &amp; AI Engineering</span>
+        </div>
+        <p class="kicker">Student Project Portfolio</p>
+        <h1 id="hero-title">Prompt Artificial Intelligence<br><em>Lab 1</em></h1>
+        <p class="hero-subtitle">Exploring how better prompts create better results.</p>
+        <p class="hero-intro">เว็บไซต์นี้รวบรวมการทดลองเปรียบเทียบ Zero-shot Prompt กับ Refined Prompt ผ่านเครื่องมือ AI และ Developer Tools 6 ประเภท เพื่อศึกษาว่า Context, Requirements และ Expected Output ส่งผลต่อคุณภาพของคำตอบอย่างไร</p>
+        <div class="student-signature">
+          <span class="signature-line" aria-hidden="true"></span>
+          <div><strong>Paphonthap Chanuwatnuntasiri</strong><small>Computer &amp; AI Engineering</small></div>
+        </div>
+      </div>
+
+      <aside class="hero-note reveal" aria-label="Experiment framework">
+        <p class="note-label">Experiment framework</p>
+        <ol class="prompt-flow">
+          <li><span>01</span><strong>Zero-shot</strong><small>Start with a simple request</small></li>
+          <li><span>02</span><strong>Observe</strong><small>Review the first result</small></li>
+          <li><span>03</span><strong>Refine</strong><small>Add context and constraints</small></li>
+          <li><span>04</span><strong>Compare</strong><small>Learn from the difference</small></li>
+        </ol>
+        <p class="note-caption">Six tools · One repeatable learning process</p>
+      </aside>
+    </section>
+
+    <section class="overview section-shell" aria-label="Portfolio overview">
+      <p class="section-index">01–06 / Experiments</p>
+      <div class="overview-copy">
+        <h2>One idea, tested<br>across six tools.</h2>
+        <p>เลื่อนดูจากภาพที่ AI สร้าง ไปจนถึงกราฟ แผนภาพ เอกสาร สไลด์ และเว็บไซต์ ทุกหัวข้อใช้หลักฐานจากงานจริงและนำเสนอในรูปแบบเดียวกันเพื่อให้เปรียบเทียบได้รวดเร็ว</p>
+      </div>
+    </section>
+
+    <section class="topic section-shell" id="ai-image" aria-labelledby="topic1-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">01</div>
+        <div><p class="topic-tool">AI Image Generation</p><h2 id="topic1-title">From a broad visual request<br>to a controlled composition.</h2></div>
+        <p class="topic-summary">ทดลองสร้างภาพ “สวัสดีวันจันทร์” และปรับรายละเอียดให้แมวมีแขน 2 ข้าง อยู่ในห้องเรียน และมีบรรยากาศสดใสขึ้น</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-zero">Zero-shot</span><span class="step">Prompt 01</span></div>
+          <blockquote lang="th">“ขอรูปสวัสดีวันจันทร์โดยใช้รูปนี้หน่อย”</blockquote>
+          <figure class="result-figure portrait">
+            <button class="image-open" type="button" data-lightbox="images/topic1-zero-shot.png" data-caption="Topic 1 — Zero-shot AI image result" aria-label="ขยายภาพผลลัพธ์ Zero-shot ของ Topic 1">
+              <img src="images/topic1-zero-shot.png" alt="ภาพ Zero-shot สวัสดีวันจันทร์ เป็นแมวการ์ตูนสีเทาที่มีแขนหลายข้างบนโต๊ะทำงาน" loading="lazy">
+            </button>
+            <figcaption>First result · usable, but loosely controlled</figcaption>
+          </figure>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined</span><span class="step">Prompt 02</span></div>
+          <blockquote lang="th">“แก้มือของแมวให้เหลือ 2 ข้าง เพิ่มบรรยากาศห้องเรียน และทำให้ภาพสดใสขึ้น”</blockquote>
+          <figure class="result-figure portrait">
+            <button class="image-open" type="button" data-lightbox="images/topic1-refined.png" data-caption="Topic 1 — Refined AI image result" aria-label="ขยายภาพผลลัพธ์ Refined ของ Topic 1">
+              <img src="images/topic1-refined.png" alt="ภาพ Refined สวัสดีวันจันทร์ เป็นแมวการ์ตูนสองแขนในห้องเรียนที่สว่างสดใส" loading="lazy">
+            </button>
+            <figcaption>Refined result · clearer anatomy and setting</figcaption>
+          </figure>
+        </article>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>Zero-shot ให้ผลลัพธ์ที่ใช้งานได้ แต่รายละเอียดใน Prompt ช่วยควบคุมองค์ประกอบและลักษณะของภาพให้ตรงกับความต้องการเฉพาะเจาะจงมากขึ้น</p></div>
+    </section>
+
+    <section class="topic section-shell" id="desmos" aria-labelledby="topic2-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">02</div>
+        <div><p class="topic-tool">Mathematical Graph with Desmos</p><h2 id="topic2-title">A few curves became<br>a graduation cap.</h2></div>
+        <p class="topic-summary">จากคำขอสร้าง “หมวกด้วยสมการ” สู่ข้อกำหนดที่ระบุภาพอ้างอิง รูปทรง พู่ สี พื้นที่ระบาย และการตรวจผลบนกราฟจริง</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-zero">Zero-shot</span><span class="step">Simple equation set</span></div>
+          <blockquote lang="th">“ช่วยสร้างหมวกด้วยสมการ ให้ผมใส่ใน Desmos หน่อยสิ”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic2-zero-shot.png" data-caption="Topic 2 — Zero-shot Desmos graph" aria-label="ขยายภาพกราฟ Desmos แบบ Zero-shot">
+              <img src="images/topic2-zero-shot.png" alt="กราฟ Desmos แบบ Zero-shot ใช้เส้นโค้งไม่กี่เส้นสร้างรูปหมวกอย่างง่าย" loading="lazy">
+            </button>
+            <figcaption>4 expressions · simple hat silhouette</figcaption>
+          </figure>
+          <a class="button-link" href="https://www.desmos.com/calculator/3sdjycnenu" target="_blank" rel="noopener noreferrer">Open Zero-shot Graph <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined</span><span class="step">Detailed construction</span></div>
+          <blockquote lang="th">“สร้างกราฟหมวกรับปริญญาให้เหมือนภาพตัวอย่าง ใส่ตัวหมวก พู่ สี พื้นที่ระบาย และตรวจผลบนกราฟจริง”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic2-refined.png" data-caption="Topic 2 — Refined Desmos graph" aria-label="ขยายภาพกราฟ Desmos แบบ Refined">
+              <img src="images/topic2-refined.png" alt="กราฟ Desmos แบบ Refined เป็นหมวกรับปริญญาที่มีตัวหมวก สี พื้นที่ระบาย และพู่" loading="lazy">
+            </button>
+            <figcaption>Structured geometry · fill, color and tassel</figcaption>
+          </figure>
+          <a class="button-link" href="https://www.desmos.com/calculator/wnlkadehgb" target="_blank" rel="noopener noreferrer">Open Refined Graph <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>Zero-shot ให้สมการสร้างรูปหมวกอย่างง่าย เมื่อ Prompt ระบุข้อกำหนดเจาะจงขึ้น ผลลัพธ์มีรายละเอียดและใกล้กับภาพที่ต้องการมากกว่าเดิม</p></div>
+    </section>
+
+    <section class="topic section-shell" id="mermaid" aria-labelledby="topic3-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">03</div>
+        <div><p class="topic-tool">Learning Roadmap with Mermaid</p><h2 id="topic3-title">A generic path gained<br>a destination.</h2></div>
+        <p class="topic-summary">เปรียบเทียบ Roadmap ภาพรวมกับเส้นทาง Computer &amp; AI Engineering ที่จัดลำดับรายปีและมี Graduation เป็นเป้าหมายชัดเจน</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-zero">Zero-shot</span><span class="step">General roadmap</span></div>
+          <blockquote lang="th">“เขียนโค้ดเอาให้ผมไปใส่ในเว็บ Mermaid เส้นทางการเรียนแบบสั้น ๆ ง่าย ๆ”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic3-zero-shot.png" data-caption="Topic 3 — Zero-shot Mermaid roadmap" aria-label="ขยายภาพ Mermaid Roadmap แบบ Zero-shot">
+              <img src="images/topic3-zero-shot.png" alt="Mermaid Roadmap แบบ Zero-shot แสดงเส้นทางจาก Computer Basics ไปถึง Portfolio" loading="lazy">
+            </button>
+            <figcaption>Broad progression · extra follow-up required</figcaption>
+          </figure>
+          <a class="button-link" href="https://mermaid.ai/d/c13c24c4-93c6-40a9-8958-1bce6b924a3a" target="_blank" rel="noopener noreferrer">Open Zero-shot Diagram <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined</span><span class="step">Goal-led roadmap</span></div>
+          <blockquote lang="th">“สร้าง Roadmap การเรียน Computer &amp; AI Engineering ที่มีเป้าหมายไปถึง Graduation สำหรับ Mermaid Live Editor”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic3-refined.png" data-caption="Topic 3 — Refined Mermaid roadmap" aria-label="ขยายภาพ Mermaid Roadmap แบบ Refined">
+              <img src="images/topic3-refined.png" alt="Mermaid Roadmap แบบ Refined จัดเส้นทาง Computer และ AI Engineering รายปีจนถึง Graduation" loading="lazy">
+            </button>
+            <figcaption>Year-by-year structure · clear final goal</figcaption>
+          </figure>
+          <a class="button-link" href="https://mermaid.ai/d/047e61c1-d339-4a45-8038-4b71f7c4142b" target="_blank" rel="noopener noreferrer">Open Refined Diagram <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>Zero-shot ให้ Roadmap แบบภาพรวมและยังต้องถามเพิ่มเพื่อให้ได้ Mermaid Code แต่การระบุเป้าหมายและโครงสร้างช่วยลดขั้นตอนและทำให้ Roadmap ตรงความต้องการมากขึ้น</p></div>
+    </section>
+
+    <section class="topic section-shell" id="latex" aria-labelledby="topic4-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">04</div>
+        <div><p class="topic-tool">Article Creation with LaTeX</p><h2 id="topic4-title">From a code fragment<br>to a compile-ready document.</h2></div>
+        <p class="topic-summary">จุดต่างสำคัญไม่ใช่เพียงความยาว แต่คือการระบุให้ส่ง Complete LaTeX Document สำหรับ <code>main.tex</code> ที่ Compile เป็น PDF ได้ทันที</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-error">Zero-shot · Compile failed</span><span class="step">8 errors</span></div>
+          <blockquote lang="th">“ช่วยเขียนโค้ดบทความสั้น ๆ เรื่องเส้นทางการเรียน ให้ผมไปใส่ใน LaTeX”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic4-zero-shot.png" data-caption="Topic 4 — Zero-shot LaTeX compile error" aria-label="ขยายภาพผลลัพธ์ LaTeX แบบ Zero-shot ที่ Compile ไม่ผ่าน">
+              <img src="images/topic4-zero-shot.png" alt="หน้า Overleaf แสดงโค้ด LaTeX แบบ Zero-shot ที่ไม่ครบและ Compile ไม่ผ่าน พร้อมข้อความ No PDF และข้อผิดพลาด" loading="lazy">
+            </button>
+            <figcaption>Incomplete structure · no PDF produced</figcaption>
+          </figure>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined · Compile passed</span><span class="step">3-page PDF</span></div>
+          <blockquote lang="th">“สร้าง Complete LaTeX Document สำหรับ main.tex พร้อมโครงสร้างครบ และ Compile เป็น PDF ได้ทันที”</blockquote>
+          <div class="mini-gallery" aria-label="Refined LaTeX document pages">
+            <figure class="result-figure landscape">
+              <button class="image-open" type="button" data-lightbox="images/topic4-refined-page-1.png" data-caption="Topic 4 — Refined LaTeX document, page 1" aria-label="ขยายภาพหน้าแรกของเอกสาร LaTeX แบบ Refined">
+                <img src="images/topic4-refined-page-1.png" alt="Overleaf แสดงเอกสาร LaTeX แบบ Refined ที่ Compile สำเร็จ หน้าแรกมีหัวข้อ Programming Fundamentals และ Computer Science" loading="lazy">
+              </button>
+            </figure>
+            <figure class="result-figure landscape">
+              <button class="image-open" type="button" data-lightbox="images/topic4-refined-page-2.png" data-caption="Topic 4 — Refined LaTeX document, later pages" aria-label="ขยายภาพหน้าถัดไปของเอกสาร LaTeX แบบ Refined">
+                <img src="images/topic4-refined-page-2.png" alt="หน้าถัดไปของเอกสาร LaTeX แบบ Refined มีหัวข้อ Projects, Graduation และ Conclusion" loading="lazy">
+              </button>
+            </figure>
+          </div>
+          <p class="gallery-caption">Complete source · successfully compiled PDF</p>
+          <a class="button-link" href="https://www.overleaf.com/read/nyntmpfmskhw#d393e4" target="_blank" rel="noopener noreferrer">Open LaTeX Document <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>การระบุ Requirement เช่น Complete LaTeX Document, <code>main.tex</code> และ Compile-ready ทำให้ AI เข้าใจ Expected Output และสร้างผลลัพธ์ที่พร้อมใช้งานจริง</p></div>
+    </section>
+
+    <section class="topic section-shell" id="notebooklm" aria-labelledby="topic5-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">05</div>
+        <div><p class="topic-tool">Slide Creation with NotebookLM</p><h2 id="topic5-title">A free-form deck became<br>a four-year roadmap.</h2></div>
+        <p class="topic-summary">กำหนดแกนเรื่อง Year 1–4 และ Final Goal อย่างชัดเจน เพื่อให้ Slide Deck มีลำดับเหมาะกับการนำเสนอในชั้นเรียน</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-zero">Zero-shot</span><span class="step">AI-led structure</span></div>
+          <blockquote lang="th">“ช่วยสร้างสไลด์สรุปเส้นทางการเรียนจากข้อมูลนี้ให้หน่อย”</blockquote>
+          <div class="mini-gallery" aria-label="Zero-shot NotebookLM slides">
+            <figure class="result-figure slide"><button class="image-open" type="button" data-lightbox="images/topic5-zero-shot-1.png" data-caption="Topic 5 — Zero-shot NotebookLM slides, view 1" aria-label="ขยายภาพสไลด์ NotebookLM แบบ Zero-shot ภาพที่ 1"><img src="images/topic5-zero-shot-1.png" alt="สไลด์ NotebookLM แบบ Zero-shot แสดงหน้าปกและภาพรวมสถาปัตยกรรมการเรียนรู้ 4 ปี" loading="lazy"></button></figure>
+            <figure class="result-figure slide"><button class="image-open" type="button" data-lightbox="images/topic5-zero-shot-2.png" data-caption="Topic 5 — Zero-shot NotebookLM slides, view 2" aria-label="ขยายภาพสไลด์ NotebookLM แบบ Zero-shot ภาพที่ 2"><img src="images/topic5-zero-shot-2.png" alt="สไลด์ NotebookLM แบบ Zero-shot แสดงบันไดสายอาชีพและ Learning Roadmap" loading="lazy"></button></figure>
+          </div>
+          <p class="gallery-caption">NotebookLM chose the narrative and slide structure</p>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined</span><span class="step">4-year structure</span></div>
+          <blockquote lang="th">“สร้าง Roadmap 4 ปี แบ่ง Year 1–4 พร้อม Graduation และการเตรียมเข้าสู่อาชีพด้าน Technology”</blockquote>
+          <div class="mini-gallery" aria-label="Refined NotebookLM slides">
+            <figure class="result-figure slide"><button class="image-open" type="button" data-lightbox="images/topic5-refined-1.png" data-caption="Topic 5 — Refined NotebookLM slides, view 1" aria-label="ขยายภาพสไลด์ NotebookLM แบบ Refined ภาพที่ 1"><img src="images/topic5-refined-1.png" alt="สไลด์ NotebookLM แบบ Refined แสดง Roadmap Computer และ AI Engineering และเส้นเวลา 4 ปีจนถึง Graduation" loading="lazy"></button></figure>
+            <figure class="result-figure slide"><button class="image-open" type="button" data-lightbox="images/topic5-refined-2.png" data-caption="Topic 5 — Refined NotebookLM slides, view 2" aria-label="ขยายภาพสไลด์ NotebookLM แบบ Refined ภาพที่ 2"><img src="images/topic5-refined-2.png" alt="สไลด์ NotebookLM แบบ Refined แสดง Year 4 Capstone Project and Career Preparation และการเชื่อมสู่ภาคธุรกิจ" loading="lazy"></button></figure>
+          </div>
+          <p class="gallery-caption">Explicit milestones · presentation-ready sequence</p>
+        </article>
+      </div>
+
+      <div class="roadmap-chips reveal" aria-label="Refined four-year roadmap">
+        <div><span>Year 1</span><strong>Programming Fundamentals</strong></div>
+        <div><span>Year 2</span><strong>CS &amp; Software Development</strong></div>
+        <div><span>Year 3</span><strong>AI &amp; Projects</strong></div>
+        <div><span>Year 4</span><strong>Capstone &amp; Career Prep</strong></div>
+        <div class="goal-chip"><span>Final Goal</span><strong>Graduation</strong></div>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>เมื่อกำหนดโครงสร้างและหัวข้อที่ต้องการใน Prompt, NotebookLM สามารถสร้าง Slide ที่มีลำดับและตรงกับรูปแบบที่ต้องการมากขึ้น</p></div>
+    </section>
+
+    <section class="topic section-shell" id="website" aria-labelledby="topic6-title">
+      <header class="topic-heading reveal">
+        <div class="topic-number">06</div>
+        <div><p class="topic-tool">Website with GitHub Pages</p><h2 id="topic6-title">A simple page became<br>an interactive roadmap.</h2></div>
+        <p class="topic-summary">เปรียบเทียบเว็บไซต์พื้นฐานกับ Roadmap การเรียน Computer &amp; AI Engineering 4 ปี ที่มี Navigation, ตัวกรองรายปี, Checklist, Progress Bar และ Responsive Design</p>
+      </header>
+
+      <div class="comparison-grid">
+        <article class="result-card reveal">
+          <div class="card-top"><span class="status status-zero">Zero-shot</span><span class="step">Basic website</span></div>
+          <blockquote lang="th">“สร้าง file website หน้าตาง่าย ๆ ให้ผมหน่อยสิ”</blockquote>
+          <figure class="result-figure landscape">
+            <button class="image-open" type="button" data-lightbox="images/topic6-zero-shot.png" data-caption="Topic 6 — Zero-shot website" aria-label="ขยายภาพเว็บไซต์แบบ Zero-shot ของ Topic 6">
+              <img src="images/topic6-zero-shot.png" alt="เว็บไซต์แบบ Zero-shot มีแถบนำทาง หัวข้อต้อนรับ ข้อความสั้น และปุ่มหนึ่งปุ่ม" loading="lazy">
+            </button>
+            <figcaption>Basic structure · simple navigation and button</figcaption>
+          </figure>
+          <a class="button-link" href="https://paphonthap.github.io/Lab1_Paphonthap/" target="_blank" rel="noopener noreferrer">Open Zero-shot Website <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="result-card refined reveal">
+          <div class="card-top"><span class="status status-refined">Refined</span><span class="step">Interactive 4-year roadmap</span></div>
+          <blockquote lang="th">“สร้างเว็บไซต์ Roadmap 4 ปี แยก HTML, CSS และ JavaScript พร้อม Navigation, Responsive Design และ Interaction”</blockquote>
+          <div class="mini-gallery many" aria-label="Refined roadmap website views">
+            <figure class="result-figure landscape"><button class="image-open" type="button" data-lightbox="images/topic6-refined-1.png" data-caption="Topic 6 — Refined website, Year 1" aria-label="ขยายภาพเว็บไซต์ Refined Topic 6 ส่วน Year 1"><img src="images/topic6-refined-1.png" alt="เว็บไซต์ Refined แสดง Roadmap หน้า Year 1 พร้อม Checklist และ Progress Bar" loading="lazy"></button></figure>
+            <figure class="result-figure landscape"><button class="image-open" type="button" data-lightbox="images/topic6-refined-2.png" data-caption="Topic 6 — Refined website, Year 2" aria-label="ขยายภาพเว็บไซต์ Refined Topic 6 ส่วน Year 2"><img src="images/topic6-refined-2.png" alt="เว็บไซต์ Refined แสดงตัวกรอง Year 2 และรายวิชา Computer Science กับ Software Development" loading="lazy"></button></figure>
+            <figure class="result-figure landscape"><button class="image-open" type="button" data-lightbox="images/topic6-refined-3.png" data-caption="Topic 6 — Refined website, Year 3" aria-label="ขยายภาพเว็บไซต์ Refined Topic 6 ส่วน Year 3"><img src="images/topic6-refined-3.png" alt="เว็บไซต์ Refined แสดงตัวกรอง Year 3 และหัวข้อ Artificial Intelligence กับ Projects" loading="lazy"></button></figure>
+            <figure class="result-figure landscape"><button class="image-open" type="button" data-lightbox="images/topic6-refined-4.png" data-caption="Topic 6 — Refined website, Year 4" aria-label="ขยายภาพเว็บไซต์ Refined Topic 6 ส่วน Year 4"><img src="images/topic6-refined-4.png" alt="เว็บไซต์ Refined แสดงตัวกรอง Year 4 และหัวข้อ Capstone Project กับ Career Preparation" loading="lazy"></button></figure>
+            <figure class="result-figure landscape"><button class="image-open" type="button" data-lightbox="images/topic6-refined-5.png" data-caption="Topic 6 — Refined website, Graduation goal" aria-label="ขยายภาพเว็บไซต์ Refined Topic 6 ส่วน Graduation"><img src="images/topic6-refined-5.png" alt="เว็บไซต์ Refined แสดงเป้าหมาย Graduation และสายอาชีพด้าน AI และ Software" loading="lazy"></button></figure>
+          </div>
+          <p class="gallery-caption">Year filters · checklist · progress tracking · graduation goal</p>
+          <a class="button-link" href="https://paphonthap.github.io/Lab1_Paphonthap_Refined/" target="_blank" rel="noopener noreferrer">Open Refined Website <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <div class="learning-strip reveal"><strong>What I learned</strong><p>Zero-shot สร้างเว็บไซต์พื้นฐานได้ แต่เมื่อระบุ Roadmap 4 ปี โครงสร้างไฟล์ Navigation, Responsive Design และ JavaScript Interaction ผลลัพธ์มีเนื้อหาชัดเจน ฟังก์ชันครบ และพร้อมใช้งานจริงมากขึ้น</p></div>
+    </section>
+
+    <section class="key-learning" id="learning" aria-labelledby="learning-title">
+      <div class="section-shell">
+        <p class="section-index">Final reflection</p>
+        <div class="learning-intro reveal">
+          <h2 id="learning-title">Key Learning</h2>
+          <blockquote>“A good prompt does not only tell AI what to do.<br>It also defines the expected result.”</blockquote>
+          <p>จากการทดลองพบว่า Zero-shot Prompt สามารถสร้างผลลัพธ์พื้นฐานได้ แต่เมื่อเพิ่ม Context, Requirements, Structure และ Expected Output ลงใน Prompt ผลลัพธ์จะตรงกับเป้าหมายมากขึ้น ลดการถามซ้ำ และนำไปใช้งานจริงได้ง่ายขึ้น</p>
+        </div>
+
+        <div class="learning-grid">
+          <article class="principle-card reveal"><span>01</span><h3>Context</h3><p>ให้ข้อมูลพื้นฐานที่ AI จำเป็นต้องรู้</p></article>
+          <article class="principle-card reveal"><span>02</span><h3>Requirements</h3><p>ระบุสิ่งที่ต้องการอย่างชัดเจน</p></article>
+          <article class="principle-card reveal"><span>03</span><h3>Structure</h3><p>กำหนดรูปแบบและลำดับของผลลัพธ์</p></article>
+          <article class="principle-card reveal"><span>04</span><h3>Expected Output</h3><p>บอกให้ชัดว่าผลลัพธ์สุดท้ายควรพร้อมใช้งานอย่างไร</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-shell reveal" aria-label="Closing statement">
+      <p>From a simple prompt</p>
+      <h2>to a better result.</h2>
+      <div class="closing-meta"><span>Prompt Artificial Intelligence Lab 1</span><span>Computer &amp; AI Engineering</span><strong>Paphonthap Chanuwatnuntasiri</strong></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div><strong>Paphonthap Chanuwatnuntasiri</strong><span>นายปพนทัพพ์ ชานุวัชรนันทศิริ</span></div>
+      <div><span>Computer &amp; AI Engineering</span><span>Prompt Artificial Intelligence · Lab 1</span></div>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="กลับไปด้านบน"><span aria-hidden="true">↑</span></button>
+
+  <dialog class="lightbox" aria-label="Image preview">
+    <div class="lightbox-panel">
+      <button class="lightbox-close" type="button" aria-label="ปิดภาพขยาย">×</button>
+      <img src="" alt="">
+      <p></p>
+    </div>
+  </dialog>
+</body>
+</html>
